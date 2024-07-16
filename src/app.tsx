@@ -5,15 +5,7 @@ import { Form } from './components/form'
 import { Result } from './components/result'
 
 export const App = () => {
-  const [result, setResult] = useState<EmiDetails | null>(
-    calculateEmi({
-      amount: 10000,
-      interestPerAnnum: 15,
-      timeInMonths: 6,
-      processingFees: 0,
-      gstInPercentage: 18,
-    })
-  )
+  const [result, setResult] = useState<EmiDetails | null>(null)
 
   const handleSubmit = (e: Event) => {
     e.preventDefault()

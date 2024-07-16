@@ -6,14 +6,13 @@ export const Form = ({ handleSubmit }: { handleSubmit: (e: Event) => void }) => 
       <h1 class="text-center text-3xl font-bold underline decoration-primary underline-offset-2">
         no cost emi calculator
       </h1>
-      <Input name="amount" label="Amount" min="1" required placeholder="10000" />
+      <Input name="amount" label="Amount" min="1" required />
       <Input
         name="interest"
         label="Interest"
         subscript="(per annum)"
         min="1"
         required
-        placeholder="15"
       />
       <Input
         name="time"
@@ -21,7 +20,6 @@ export const Form = ({ handleSubmit }: { handleSubmit: (e: Event) => void }) => 
         subscript="(in months)"
         min="1"
         required
-        placeholder="6"
       />
       <Input
         name="processingFees"
